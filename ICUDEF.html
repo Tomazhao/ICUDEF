@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>ICUDEF</title>
-    <link rel="stylesheet" href="ICUDEF.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <title>ICUDEF</title>
+  <link rel="stylesheet" href="styles.css">  
   </head>
+
   <body>
   <main>
-    <h1>ICUDEF</h1>
+    <h1 id="title">Our Culture: A Youth Perspectives Survey</h1>
+    <p id="description">This survey helps us uderstand how young people like you want to be involved in preserving our cultural heritage</p>
+    
+    <form id="survey-form">
+      
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required/>
+      <label for="email" id="email-label">Email:</label>
+      <input id="email" type="email" placeholder="Enter your Email" required/>
+      <label for="number" id="number-label">Birth Year: </label>
+      <input id="number" type="number" min="1990" max="2010" placeholder="YYYY"/>
+      
+      <label for="dropdown">Connection to Iteso Heritage:</label>
+      <select id="dropdown">
+      <option value="1">(select one)</option>
+      <option value="2">Born into it</option>
+      <option value="3">Married into it</option>
+      <option value="4">Interested in learning</option>
+      <option value="5">Other</option>
+      </select>
+
+      <p>Sex:</p>
+      <label>
+      <input type="radio" name="Sex" value="male"/>Male</label>
+      <input type="radio" name="Sex" value="female">Female</label>
+
+      <p>How would you most enjoy engaging with Teso culture?</p>
+      <label><input type="checkbox" value="preferrences">Festivals (music, dance and food)</label>
+      <llabel><input type="checkbox" value="preferrences">Workshops (language, cooking, craft)</label>
+      <label><input type="checkbox" value="preferrences">Diaspora Community Associations</label>
+      <label><input type="checkbox" value="preferrences"/>Cultural exchange programs</label>
+      <label><input type="checkbox" value="preferrences">Youth led conventions</label>
+
+      <label for="bio">Bio: </label>
+      <textarea id="bio" namme="bio" rows="3" placeholder="Tell us a bit about what shapes who you are today..."></textarea>
+
+      <label>Submit: <input type="submit" id="submit" value="submit"/></submit>
+
+    </form>
+  
   </main>
   </body>
 </html>
